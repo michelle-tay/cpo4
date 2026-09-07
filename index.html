@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CE Wayfinding</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell landing-page">
+      <header class="page-header">
+        <p class="eyebrow">SGH Civil Emergency</p>
+        <h1>CE Wayfinding</h1>
+        <p>Select your current location and destination to get step-by-step directions.</p>
+      </header>
+
+      <form class="route-form" id="routeForm" novalidate>
+        <div class="field-group">
+          <label for="startLocation">Where are you now?</label>
+          <select id="startLocation" name="startLocation" required>
+            <option value="">Select current location</option>
+            <option value="mot">Major Operating Theatre (MOT)</option>
+            <option value="ward76">Ward 76</option>
+            <option value="soch">SOC H</option>
+          </select>
+          <div class="selection-preview" id="startPreview" hidden>
+            <img id="startPreviewImage" src="" alt="">
+            <div>
+              <span>Selected starting point</span>
+              <strong id="startPreviewName"></strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="destination">Where do you need to go?</label>
+          <select id="destination" name="destination" required>
+            <option value="">Select destination</option>
+            <option value="academia">Academia Auditorium</option>
+          </select>
+          <div class="selection-preview" id="destinationPreview" hidden>
+            <img id="destinationPreviewImage" src="" alt="">
+            <div>
+              <span>Selected destination</span>
+              <strong id="destinationPreviewName"></strong>
+            </div>
+          </div>
+        </div>
+
+        <p class="form-message" id="formMessage" role="alert"></p>
+
+        <button class="button primary-button" type="submit">Get directions</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
