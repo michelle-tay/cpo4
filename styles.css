@@ -152,10 +152,8 @@ select:focus,
 
 .selection-preview img {
   width: 92px;
-  aspect-ratio: 4 / 3;
   border: 1px solid var(--border);
   border-radius: 8px;
-  object-fit: cover;
   background: #e6eeea;
 }
 
@@ -272,6 +270,7 @@ select:focus,
   font-weight: 700;
 }
 
+
 .steps-list {
   position: relative;
   display: grid;
@@ -294,6 +293,11 @@ select:focus,
 .step-card {
   position: relative;
   padding: 18px;
+}
+
+.start-step {
+  border-color: rgba(0, 107, 95, 0.28);
+  background: var(--surface-soft);
 }
 
 .step-card::before {
@@ -342,10 +346,8 @@ select:focus,
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
   border: 1px solid var(--border);
   border-radius: 8px;
-  object-fit: cover;
   background: #e6eeea;
 }
 
@@ -390,10 +392,8 @@ select:focus,
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
   border: 1px solid var(--border);
   border-radius: 8px;
-  object-fit: cover;
   margin: 0 0 16px;
   background: #e6eeea;
 }

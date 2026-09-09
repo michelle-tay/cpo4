@@ -9,19 +9,19 @@ const routePages = {
 const places = {
   mot: {
     name: "Major Operating Theatre (MOT)",
-    image: "images/place-mot.svg"
+    image: "routeimages/p1_mot/mot.png"
   },
   ward76: {
     name: "Ward 76",
-    image: "images/place-ward76.svg"
+    image: "routeimages/p2_ward76/ward76.png"
   },
   soch: {
     name: "SOC H",
-    image: "images/place-soch.svg"
+    image: "routeimages/p3_soch/SOCH.png"
   },
   academia: {
     name: "Academia Auditorium",
-    image: "images/academia-auditorium.svg"
+    image: "routeimages/p1_mot/academia.png"
   }
 };
 
