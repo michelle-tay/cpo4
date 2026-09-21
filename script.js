@@ -2,6 +2,7 @@ const form = document.querySelector("#routeForm");
 
 const routePages = {
   mot: "mot.html",
+  "mot-level1": "mot-level1.html",
   ward76: "ward76.html",
   soch: "soch.html"
 };
@@ -10,6 +11,10 @@ const places = {
   mot: {
     name: "Major Operating Theatre (MOT)",
     image: "routeimages/p1_mot/mot.jpg"
+  },
+  "mot-level1": {
+    name: "Major Operating Theatre (MOT) Level 1",
+    image: "routeimages/p1_mot2/MOT.jpg"
   },
   ward76: {
     name: "Ward 76",
